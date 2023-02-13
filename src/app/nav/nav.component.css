@@ -1,0 +1,42 @@
+.navbar{
+    display: flex;
+    background-color: #30254d;
+}
+.site-name{
+    padding: 15px 30px;
+    color:#ffffff;
+}
+.site-menu{
+    padding: 1rem;
+    text-decoration:none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    background-color: #eae3f3;
+    border-radius: 20px;
+}
+
+.site-menu:hover{
+    color: white;
+    background-color: #aa729e;
+}
+
+.site-menu:active{
+    color: rgb(255, 255, 255);
+    background-color: #6c3c7a;
+}
+a{
+    text-decoration: none;
+    color:#483b77;
+    margin: 0px 20px;
+}
+.site-menu-cart{
+    text-align: right;
+    text-decoration:none;
+    margin-left: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    background-color: #2b0957;
+    border-radius: 20px;
+}

@@ -1,0 +1,39 @@
+
+.header{
+    height: 280px;
+    padding:30px 40px;
+    display: flex;
+    background-color: #fff;
+}
+.site-slogan1{
+    color: #d04764; 
+    font-family:'Trebuchet MS',sans-serif, cursive;
+    font-size: 40px; 
+    line-height: 160px; 
+    font-weight: normal; 
+    
+    text-align: center; 
+    text-shadow: 0 1px 1px #fff;
+}
+.site-slogan2{
+    color: #7a7c7f; 
+    font-size: 20px; 
+    font-family: "Libre Baskerville", serif; 
+    line-height: 45px; 
+    text-align: center; 
+    text-shadow: 0 1px 1px #fff; 
+    padding-top: 5px; 
+}
+.button-shop{
+    padding: 1rem;
+    text-decoration: none;
+    margin-top: 5px;
+    display: inline-block;
+    background-color: #e8e8e8;
+    color: #3d3d3d;
+    border-radius: 20px;
+}
+.button-shop:hover{
+    color: white;
+    background-color: #aa729e;
+}
