@@ -5,9 +5,9 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { HeaderComponent } from './header/header.component';
 import { CartComponent } from './cart/cart.component';
-import { ContactComponent } from './contact/contact.component';
 import { ShopComponent } from './shop/shop.component';
 import { FormsModule } from '@angular/forms';
+import { CartService } from './cart.service';
 
 @NgModule({
   declarations: [
@@ -15,15 +15,14 @@ import { FormsModule } from '@angular/forms';
     NavComponent,
     HeaderComponent,
     CartComponent,
-    ContactComponent,
-    ShopComponent
+    ShopComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

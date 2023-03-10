@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { iItem } from '../item';
-import { SHOPPINGITEMS } from '../shopping-itmes';
+import { CollectionService } from '../collection.service';
+import { CartComponent } from '../cart/cart.component';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-shop',
@@ -9,10 +11,25 @@ import { SHOPPINGITEMS } from '../shopping-itmes';
 })
 
 export class ShopComponent {
-  items = SHOPPINGITEMS;
-  selectedItem? : iItem;
 
-  onSelect(item: iItem):void{
-    this.selectedItem = item;
+  items: iItem[]=[];
+  selectedItem? : iItem;
+  wantedItem? : iItem;
+  constructor(private collectionSercice: CollectionService, private cartService: CartService){}
+
+  getItems():void{
+    this.items = this.collectionSercice.getItems();
+  }
+
+  ngOnInit():void{
+    this.getItems();
+  }
+
+  onSelect(items: iItem):void{
+    this.selectedItem = items;
+  }
+
+  markAsAdded(items: iItem) {
+    this.cartService.addToAccepted(items);
   }
 }

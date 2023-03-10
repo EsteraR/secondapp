@@ -1,66 +1,24 @@
 /* Shop Components's private CSS styles */
-.heroes {
-    margin: 0 0 2em 0;
-    list-style-type: none;
-    padding: 0;
-    width: 15em;
-  }
+
+.btn{
+  width: 200;
+}
+
+.btn-custom {
+  background-color: hsl(0, 100%, 81%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd1d1", endColorstr="#ff9e9e");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#ffd1d1), to(#ff9e9e));
+  background-image: -moz-linear-gradient(top, #ffd1d1, #ff9e9e);
+  background-image: -ms-linear-gradient(top, #ffd1d1, #ff9e9e);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffd1d1), color-stop(100%, #ff9e9e));
+  background-image: -webkit-linear-gradient(top, #ffd1d1, #ff9e9e);
+  background-image: -o-linear-gradient(top, #ffd1d1, #ff9e9e);
+  background-image: linear-gradient(#ffd1d1, #ff9e9e);
+  border-color: #ff9e9e #ff9e9e hsl(0, 100%, 78.5%);
+  color: #333 !important;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.16);
+  -webkit-font-smoothing: antialiased;
+  margin: 5px;
   
-  .items li {
-    display: flex;
-  }
-  
-  .items button {
-    flex: 1;
-    cursor: pointer;
-    position: relative;
-    left: 0;
-    background-color: #EEE;
-    margin: .5em;
-    padding: 0;
-    border-radius: 4px;
-    display: flex;
-    align-items: stretch;
-    height: 1.8em;
-  }
-  
-  .items button:hover {
-    color: #2c3a41;
-    background-color: #e6e6e6;
-    left: .1em;
-  }
-  
-  .items button:active {
-    background-color: #525252;
-    color: #fafafa;
-  }
-  
-  .items button.selected {
-    background-color: black;
-    color: white;
-  }
-  
-  .items button.selected:hover {
-    background-color: #505050;
-    color: white;
-  }
-  
-  .items button.selected:active {
-    background-color: black;
-    color: white;
-  }
-  
-  .items .badge {
-    display: inline-block;
-    font-size: small;
-    color: white;
-    padding: 0.8em 0.7em 0 0.7em;
-    background-color: #405061;
-    line-height: 1em;
-    margin-right: .8em;
-    border-radius: 4px 0 0 4px;
-  }
-  
-  .items .name {
-    align-self: center;
-  }
+}
