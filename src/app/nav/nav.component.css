@@ -1,19 +1,19 @@
 .navbar{
-    display: flex;
-    background-color: #392768;
+    background-color: #392768; 
+    max-width: 2253px;
 }
 .site-name{
+    text-align: center;
     padding: 15px 30px;
     color:#e2d0d0;
 }
 .site-menu{
     padding: 1rem;
     text-decoration:none;
-    margin-top: 5px;
-    margin-bottom: 5px;
     display: inline-block;
     background-color: #ddd7e7;
     border-radius: 20px;
+    text-align: center;
 }
 
 .site-menu:hover{
@@ -28,5 +28,5 @@
 a{
     text-decoration: none;
     color:#483b77;
-    margin: 0px 20px;
+    margin: 0px 0px;
 }

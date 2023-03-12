@@ -20,6 +20,7 @@ export class CartService {
     this.name = "I changed my name";
     this.addedToCart.push(items);
     this.addedToCartSubject.next(this.addedToCart);
+    window.alert('Your product has been added to the cart!');
   }
 
   removeFromArray(items: iItem) {

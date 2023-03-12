@@ -1,7 +1,7 @@
 /* Shop Components's private CSS styles */
 
 .btn{
-  width: 200;
+  width: 200px;
 }
 
 .btn-custom {
@@ -21,4 +21,23 @@
   -webkit-font-smoothing: antialiased;
   margin: 5px;
   
+}
+
+.title{
+
+text-align: center;
+}
+
+.col-lg-5 {
+  display: grid;
+  align-content: center;
+}
+
+.col-sm-12 {
+  display: grid;
+  align-content: center;
+}
+
+span {
+  color: green;
 }

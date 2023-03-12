@@ -12,6 +12,7 @@ import { iItem } from '../item';
 })
 export class CartComponent implements OnInit {
   addedItem: iItem[] = [];
+  emptyMessage = "";
   constructor(private cartService: CartService) {
   }
   ngOnInit(): void {
@@ -26,11 +27,14 @@ export class CartComponent implements OnInit {
     console.log("in on init");
 
   }
-  removeFromCart(items: iItem):void{
+  removeFromCart(items: iItem): void {
     this.cartService.removeFromArray(items);
   }
-  // removeFromCart(item):
-  // {
-  //   this.item 
-  // }
+  emptyCart(array: any):string {
+    if (this.addedItem.length === 0) {
+     return this.emptyMessage = "Your cart is empty";
+    } else {
+      return this.emptyMessage = "Your cart";
+    }
+  }
 }

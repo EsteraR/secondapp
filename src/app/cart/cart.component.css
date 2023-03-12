@@ -1,83 +1,11 @@
 /* Shop Components's private CSS styles */
 
-.list-of-items {
-    margin: 2 2 2em 2;
-    list-style-type: none;
-    padding: 0;
-    width: 40em;
+.span{
+  color: red;
+}
+.title{
+ 
+  text-align: center;
   }
 
-  .list-of-items li {
-    display: flex;
-  }
   
-  .list-of-items button {
-    flex: 1;
-    cursor: pointer;
-    position: relative;
-    left: 1;
-    background-color: #EEE;
-    margin: 1em;
-  
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    height: 1.8em;
-  }
-  
-  .list-of-items button:hover {
-    color: #28102b;
-    background-color: #e6e6e6;
-    left: .1em;
-  }
-  
-  .list-of-items button:active {
-    background-color: #525252;
-    color: #fafafa;
-  }
-  
-  .list-of-items button.selected {
-    background-color: rgb(39, 1, 26);
-    color: white;
-  }
-  
-  .list-of-items button.selected:hover {
-    background-color: #505050;
-    color: white;
-  }
-  
-  .list-of-items button.selected:active {
-    background-color: black;
-    color: white;
-  }
-  
-  .list-of-items .badge {
-    display: inline-block;
-    font-size: small;
-    color: white;
-    padding: 0.8em 0.7em 0 0.7em;
-    background-color: #405061;
-    line-height: 1em;
-    margin-right: .8em;
-    border-radius: 4px 0 0 4px;
-  }
-  
-  .list-of-items.name {
-    align-self: center;
-  }
-  
-  
-  .details button.clicked {
-    background-color: rgb(155, 19, 107);
-    color: white;
-  }
-  
-  .details button.clicked:hover {
-    background-color: #d365c1;
-    color: white;
-  }
-  
-  .details button.clicked:active {
-    background-color: rgb(80, 2, 57);
-    color: white;
-  }
